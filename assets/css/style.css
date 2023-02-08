@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body,
+html{
+    width: 100%;
+    height: 100%;
+}
+div.wrapper{
+    width: 100%;
+    height: 100%;
+}
+    div.wrapper header,
+    div.wrapper footer,
+    div.wrapper div.container{
+        background-color: lightslategray;
+        height: 50px;
+        width: 100%
+    }
+    div.wrapper header{
+        padding: 0 100px;
+    }
+        div.wrapper header h1{
+            display: inline-block;
+            font-size: 30px;
+            margin-top: 10px;
+            width: 127px;
+        }
+        div.wrapper header a{
+            display: inline-block;
+            width: 100px;
+            font-size: 24px;
+            text-align: right;
+            margin-left: calc(100% - 227px);
+        }
+    div.wrapper div.container{
+        background: none;
+        left: calc(50% - 450px);
+        width: 900px;
+        height: fit-content;
+        min-height: 800px;
+        /* background-color: blue; */
+        margin: 50px auto;
+        text-align: center;
+    }
+        div.wrapper div.container form{
+            display: inline-block;
+            width: 240px;
+            padding: 20px;
+            background-color: rgb(215, 215, 215);
+            margin: 20px 10px;
+            text-align: left;
+            height: 350px;
+            vertical-align: top;
+        }
+            div.wrapper div.container form img{
+                width: 200px;
+                height: 250px;
+                object-fit: contain;
+                margin-bottom: 10px;
+                background-color: #fff;
+            }
+            div.wrapper div.container form label{
+                display: inline-block;
+                width: 80px;
+                margin-right: calc(100% - 130px);
+            }
+            div.wrapper div.container form p{
+                display: inline-block;
+                width: 50px;
+                text-align: right;
+                margin-bottom: 10px;
+            }
+            div.wrapper div.container form input{
+                vertical-align: top;
+                width: 90px;
+                cursor: pointer;
+                height: 30px;
+            }
+            div.wrapper div.container form input.number{
+                width: 90px;
+                text-align: center;
+                font-size: 1.2rem;
+                margin-right: calc(100% - 180px);
+            }
+        div.wrapper div.remove div#form{
+            display: inline-block;
+            width: 600px;
+            text-align: right;
+            padding: 0 100px;
+            height: fit-content;
+            background-color: #fff;
+            /* background: none; */
+        }
+            div.wrapper div.container div#form table{
+                display: inline-block;
+                outline: solid 2px black;
+                border-collapse: collapse;
+            }
+                div.wrapper div.container div#form table th,
+                div.wrapper div.container div#form table td{
+                    padding: 5px 20px;
+                    outline: none;
+                    border-left: solid 1px black;
+                    border-right: solid 1px black;
+                    text-align: center;
+                }
+                div.wrapper div.container div#form table th{
+                    background-color: lightgray;
+                }
+                div.wrapper div.container div#form table td{
+                    background-color: #fff;
+                }
+                    div.wrapper div.container div#form table tbody tr td input.delete{
+                        width: 25px;
+                        height: 25px;
+                        display: inline-block;
+                        position: relative;
+                        background-color: red;
+                        color: #fff;
+                        font-weight: bolder;
+                        box-shadow: 2px 2px black;
+                        transition: all 100ms;
+                    }
+                    div.wrapper div.container div#form table tbody tr td input.delete:active{
+                        transform: translate(2px, 2px);
+                        box-shadow: 0px 0px black;
+                    }
+                        form#remove{
+                            height: fit-content;
+                            width: fit-content;
+                            padding: 0;
+                            margin: 0;
+                        }
+        div.wrapper div.remove form#bill{
+            text-align: left;
+            width: 410px;
+        }
+            div.wrapper div.remove form#bill label,
+            div.wrapper div.remove form#bill input{
+                display: inline-block;
+                width: 180px;
+                cursor:auto;
+                margin: 10px auto;
+            }
+            div.wrapper div.remove form#bill input[type="submit"]{
+                margin-left: calc(100% - 315px);
+            }
+
